@@ -1,0 +1,6 @@
+<!-- -*- mode: XML -*- -->
+<launch>
+<rosparam command="load" file="$(find configurations)/config/obstacle-param.yaml" />  
+  <node pkg="obstacle_detection" type="obstacle_detection.py" name="obstacle_detection" respawn="true" output="screen"/>
+
+</launch>
